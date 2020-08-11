@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>hover1</title>
+        <style>
+            body{
+                font-family: 'Open Sans', sans-serif;
+                font-size: 16px;
+                background-color: black;
+                 }
+            .wrap{
+                display: flex;
+                /* justify-content: left; */
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .flipBox{
+                width: 200px;
+                height: 200px;
+                background-color: white;
+                perspective: 1000px;
+                box-shadow: 0 2px 15px #ffffff;
+                margin: 10px 70px 80px 30px;
+                padding: 5px;
+            }
+            .flipBox .flipBoxInner .flipBoxFront img{
+                max-width: 100%;
+                transition: tranform 2s;
+            }
+            .flipBoxInner{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transition: 300ms;
+                transform-style: preserve-3d;
+            }
+            .flipBoxFront, .flipBoxBack{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+            }
+            .flipBoxBack{
+                padding: 15px;
+                color: #ffffff;
+                box-sizing: border-box;
+                transform: rotateY(180deg);
+            }
+            .flipBox:hover .flipBoxInner{
+                transform: rotateY(180deg);
+            }
+            .p{
+                text-align: center;
+                position: absolute;
+                left: 80%;
+                background-color: #ffffff;
+                font-size: 80px;
+            }
+            .centered {
+             position: absolute;
+             top: 20%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             font-size: 30px;
+             border: 2px solid black;
+             padding: 1px 14px 1px 14px;
+             margin: 5px;
+             background-color: black;
+             opacity: 80%;
+             font-family: "Times new Roman";
+             }
+             .centered1 {
+             position: absolute;
+             top: 20%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             font-size: 30px;
+             border: 2px solid black;
+             padding: 1px 10px 1px 10px;
+             margin: 5px;
+             background-color: black;
+             opacity: 80%;
+             font-family: "Times new Roman";
+             }
+             h1 {
+             font-family: "Times new Roman";
+             font-size: 52px;
+             padding: 5px 5px;
+             text-align: center;
+             text-transform: uppercase;
+             text-rendering: optimizeLegibility;  
+             background-color: #ffffff;
+             opacity: 100%;           
+             }
+             </style>
+    </head>
+                <body>
+                 <h1>ALPHABETS </h1>      
+           
+                 </div>
+                 <div class="wrap">
+                    <div class="flipBox">
+                  <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/A.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/AL.jpg" height="170px" width="170px">
+                        <div class="centered">APPLE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/B.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/BL.jpg" height="170px" width="170px">
+                        <div class="centered">BALL</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/C.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/CL.jpg" height="170px" width="170px">
+                        <div class="centered">CAT</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/D.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/DL.jpg" height="170px" width="170px">
+                        <div class="centered">DOG</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/E.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/EL.jpg" height="170px" width="170px">
+                        <div class="centered">EGG</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/F.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/FL.jpg" height="170px" width="170px">
+                        <div class="centered">FISH</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/G.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/GL.jpg" height="170px" width="170px">
+                        <div class="centered">GRAPES</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/H.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/HL.jpg" height="170px" width="170px">
+                        <div class="centered">HAT</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/I.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="IC.jpg" height="170px" width="170px">
+                        <div class="centered">ICE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/J.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/JL.jpg" height="170px" width="170px">
+                        <div class="centered">JACKET</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/K.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/KL.jpg" height="170px" width="170px">
+                        <div class="centered">KITE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/L.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/LL.jpg" height="170px" width="170px">
+                        <div class="centered">LION</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/M.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/ML.jpg" height="170px" width="170px">
+                        <div class="centered">MANGO</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/N.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/NL.jpg" height="170px" width="170px">
+                        <div class="centered">NEST</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/O.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/OL.jpg" height="170px" width="170px">
+                        <div class="centered1">ORANGE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/P.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/PL.jpg" height="170px" width="170px">
+                        <div class="centered">PEN</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/Q.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/QL.jpg" height="170px" width="170px">
+                        <div class="centered">QUILL</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/R.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/RL.jpg" height="170px" width="170px">
+                        <div class="centered">ROSE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/S.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                    <img src="PICTURES/SL.jpg" height="170px" width="170px">
+                    <div class="centered">SUN</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/T.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                    <img src="PICTURES/TL.jpg" height="170px" width="170px">
+                    <div class="centered">TIGER</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/U.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/UL.jpg" height="170px" width="170px">
+                        <div class="centered1">UMBRELLA</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/V.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/VL.jpg" height="170px" width="170px">
+                        <div class="centered">VAN</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/W.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/WL.jpg" height="170px" width="170px">
+                        <div class="centered">WATCH</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/X.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/XL.jpg" height="170px" width="170px">
+                        <div class="centered">XMAS</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/Y.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/YL.jpg" height="170px" width="170px">
+                        <div class="centered">YAK</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flipBox">
+                <div class="flipBoxInner">
+                    <div class="flipBoxFront">
+                        <img src="LETTERS/Z.jpg">
+                    </div>
+                    <div class="flipBoxBack" style="background-color: #000000">
+                        <img src="PICTURES/ZL.jpg" height="170px" width="170px">
+                        <div class="centered">ZEBRA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+ </html>   
